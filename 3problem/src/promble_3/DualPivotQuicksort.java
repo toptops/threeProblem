@@ -23,7 +23,7 @@
  * questions.
  */
 
-package problem_1;
+package promble_3;
 
 /**
  * This class implements the Dual-Pivot Quicksort algorithm by
@@ -44,7 +44,7 @@ package problem_1;
  * @version 2011.02.11 m765.827.12i:5\7pm
  * @since 1.7
  */
-final class DualPivotQuicksort {
+public final class DualPivotQuicksort {
 
     /**
      * Prevents instantiation.
@@ -104,7 +104,7 @@ final class DualPivotQuicksort {
      * @param workBase origin of usable space in work array
      * @param workLen usable size of work array
      */
-    static void sort(int[] a, int left, int right,
+    public static void sort(int[] a, int left, int right,
                      int[] work, int workBase, int workLen) {
         // Use Quicksort on small arrays
         if (right - left < QUICKSORT_THRESHOLD) {

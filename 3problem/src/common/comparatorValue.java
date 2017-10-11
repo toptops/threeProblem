@@ -1,4 +1,4 @@
-package problem_1;
+package common;
 
 import java.util.Comparator;
 
@@ -7,7 +7,8 @@ import java.util.Comparator;
  * @author seong
  *
  */
-public class ComparatorValue implements Comparator<hashVo>{
+ /* 키를 기준으로 값 정렬.*/
+public class comparatorValue implements Comparator<hashVo>{
 	@Override
 	public int compare(hashVo o1, hashVo o2) {
 		int ret = 0;
