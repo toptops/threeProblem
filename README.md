@@ -4,6 +4,7 @@ hashmap <key, value> 2°³ Å×ÀÌºí Áß key ¸¦ Áß½ÉÀ¸·Î value order by desc ¸¦ Ã³¸® Ç
 > **(Array or List µîÀÇ ÀÚ¹Ù ¹è¿­À» ÅëÇØ ±¸Çö)**
 
 **¿¹½Ã)**
+
 |input(1)|key     |value(num)|     |input(2)|key     |value(char)|
 |--------|--------|----------|-----|--------|--------|-----------|
 |1       |`101 `  |'2'       |     |1       |`101 `  |'e'        |
@@ -33,7 +34,8 @@ hashmap <key, value> 2°³ Å×ÀÌºí Áß key ¸¦ Áß½ÉÀ¸·Î value order by desc ¸¦ Ã³¸® Ç
  > 1¹ø ¹®Á¦¿Í µ¿ÀÏ
  
 **¿¹½Ã)**
-|input |key     |value(num)   |
+
+|input |key     |value(num)    |
 |------|--------|--------------|
 |1     |`101 `  |'1'     	   |
 |2     |`101 `  |'2'           |
