@@ -36,6 +36,7 @@ public class sort {
 
 		
 	/*
+	 * 
 	 * 들어온 정적인 배열 숫자들을 원하는 크기만큼 분할하여 퀵정렬하는 함수.
 	 * @param data 숫자 데이터의 집합.
 	 * @param divideValue 분할하려는 수. EX) divideValue = 10; 이면 data.length / 10 만큼 분할한다.

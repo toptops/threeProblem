@@ -1,13 +1,8 @@
 package main;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.Random;
 
-import common.hashVo;
-import problem_1.join;
-import problem_2.group;
-import promble_3.DualPivotQuicksort;
 import promble_3.sort;
 
 
@@ -28,32 +23,32 @@ public class test3Main {
 		sort sort = new sort();
 		long startTime, endTime, lTime;
 		
-		//ÄüÁ¤·Ä
+//		//ÄüÁ¤·Ä
 //		startTime = System.currentTimeMillis();
 //		sort.quickSort(input5, 0, input5.length-1);
 //		endTime = System.currentTimeMillis();
 //		lTime = endTime - startTime;
 //		System.out.println("Qsort TIME : " + lTime + "(ms)");
-//		
+		
 //		for(int i=10000;i<10010;i++) {
 //			System.out.println(input5[i]);
 //		}
 //		input5 = null;
 //		
 		int data[][];
-//		//ºÐÇÒ ÈÄ ÄüÁ¤·Ä
+////		//ºÐÇÒ ÈÄ ÄüÁ¤·Ä
 //		startTime = System.currentTimeMillis();
-//		data = sort.divideQuickSort(input6,100);
+//		data = sort.divideQuickSort(input5,100);
 //		endTime = System.currentTimeMillis();
 //		lTime = endTime - startTime;
 //		System.out.println("Dividesort TIME : " + lTime + "(ms)");
-//		
-//		for(int i=0;i<100;i++) {
-//			for(int j=0;j<data[i].length;j++) {
-//				System.out.println(data[i][j]);
-//			}
-//		}
-//		input6 = null;
+////		
+////		for(int i=0;i<100;i++) {
+////			for(int j=0;j<data[i].length;j++) {
+////				System.out.println(data[i][j]);
+////			}
+////		}
+//		input5 = null;
 //		
 //		//´õºí ÇÇ¹þ ÄüÁ¤·Ä
 //		startTime = System.currentTimeMillis();
@@ -68,18 +63,18 @@ public class test3Main {
 //		}
 //		input7 = null;
 		
-		//ºÐÇÒ ÈÄ ´õºí ÇÇ¹þ ÄüÁ¤·Ä
+//		//ºÐÇÒ ÈÄ ´õºí ÇÇ¹þ ÄüÁ¤·Ä
 		startTime = System.currentTimeMillis();
 		data = sort.divideDualPivotQuickSort(input8,100);
 		endTime = System.currentTimeMillis();
 		lTime = endTime - startTime;
 		System.out.println("Dividesort TIME : " + lTime + "(ms)");
 		
-		for(int i=0;i<100;i++) {
-			for(int j=0;j<data[i].length;j++) {
-				System.out.println(data[i][j]);
-			}
-		}
+//		for(int i=0;i<100;i++) {
+//			for(int j=0;j<data[i].length;j++) {
+//				System.out.println(data[i][j]);
+//			}
+//		}
 		input8 = null;
 		
 //		¹ø¿Ü
