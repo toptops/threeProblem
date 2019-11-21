@@ -1,6 +1,6 @@
 # Three Problem 
 ## ¹®Á¦ 1
-hashmap <key, value> 2°³ Å×ÀÌºí Áß key ¸¦ Áß½ÉÀ¸·Î value order by desc ¸¦ Ã³¸® ÇÑ ÈÄ ÄÜ¼Ö¿¡ Ãâ·ÂÇÏ¶ó.
+hashmap <key, value> 2°³ Å×ÀÌºí Áß key ¸¦ Áß½ÉÀ¸·Î value order by asc ¸¦ Ã³¸® ÇÑ ÈÄ ÄÜ¼Ö¿¡ Ãâ·ÂÇÏ¶ó.
 > **(Array or List µîÀÇ ÀÚ¹Ù ¹è¿­À» ÅëÇØ ±¸Çö)**
 
 **¿¹½Ã)**
@@ -82,3 +82,8 @@ hashmap <key, value> 2°³ Å×ÀÌºí Áß key ¸¦ Áß½ÉÀ¸·Î value order by desc ¸¦ Ã³¸® Ç
    > ÄüÁ¤·ÄÀ» ¾´´Ù´Â °¡Á¤
 - ¾î¶² ÄÃ·º¼Ç¿¡ µû¶ó ½Ã°£ ¶ÇÇÑ º¯ÇÕ´Ï´Ù.
    > 4Ãµ¸¸°³ ±âÁØ,  Collection.sort½Ã ArrayList : 21s, LinkedList : 41s ..
+   
+   
+<br>
+<br>
+<br>

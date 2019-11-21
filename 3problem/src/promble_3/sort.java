@@ -46,7 +46,7 @@ public class sort {
 	 * divideSortData : 정렬된 데이터들을 넣는 2차원 배열
 	 * dividedRangeCount : 분할된 크기의 데이터 크기
 	 * buf : 들어갈 범위를 지정해주는 것. 
-	 * EX) 만개의 데이터를 10개로 분할 할때, 범위는 0~999, 1000~1999 ... 9000 ~ 9999 인데
+	 * ex) 만개의 데이터를 10개로 분할 할때, 범위는 0~999, 1000~1999 ... 9000 ~ 9999 인데
 	 * n번째 값이 1200일 때 분할된 크기로 나누면 몫은 1이다 그럼 divideOriginData배열에서 divideOriginData[1][] 배열로 들어가게된다. 들어가면 dividedRangeSize[1]++ 해준다.
 	 * dividedRangeSize를 값을 따로 더해주는 이유는 divideOriginData는 정적으로 선언되어있어서 이를 동적 비슷하게 배열을 선언하기 위해서.
 	 * 이후 divideSortData에 divideOriginData를 옮겨 넣은 퀵정렬을 한다.
@@ -57,8 +57,7 @@ public class sort {
 		int divideOriginData[][] = new int[divideValue][divdeSize + divdeSize / 4];
 		int divideSortData[][] = new int[divideValue][];
 		int dividedRangeSize[] = new int[divideValue];
-		int buf,k=0;
-		int temp[] = new int[10];
+		int buf;
 		
 		
 		for (int i = 0; i < data.length; i++) {
@@ -83,7 +82,7 @@ public class sort {
 		int divideOriginData[][] = new int[divideValue][divdeSize + divdeSize / 2];
 		int divideSortData[][] = new int[divideValue][];
 		int dividedRangeSize[] = new int[divideValue];
-		int buf,k=0;
+		int buf, basePivetSite=0;
 		int temp[] = new int[1000];
 		
 		
@@ -98,7 +97,7 @@ public class sort {
 			for(int j=0;j<dividedRangeSize[i];j++)
 				divideSortData[i][j] = divideOriginData[i][j];
 			
-			DualPivotQuicksort.sort(divideSortData[i], 0, divideSortData[i].length - 1, temp, k, temp.length);
+			DualPivotQuicksort.sort(divideSortData[i], 0, divideSortData[i].length - 1, temp, basePivetSite, temp.length);
 		}
 		return divideSortData;
 	}

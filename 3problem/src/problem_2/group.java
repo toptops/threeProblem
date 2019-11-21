@@ -2,7 +2,7 @@ package problem_2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.List;
 
 import common.hashVo;
 
@@ -12,15 +12,9 @@ import common.hashVo;
  *
  */
 public class group {
-	HashMap<Integer, ArrayList<Integer>> saveDataMap;
-	
-	public group() {
-		saveDataMap = new HashMap<>();
-	}
-	
-	
 	/* 입력된 List를 Key중심으로 같은 데이터끼리 List에 담고 이를 다시 Map에 Key, value로 저장하는 함수 */
-	public void setData(ArrayList<hashVo> list) {
+	public HashMap<Integer, ArrayList<Integer>> setData(List<hashVo> list) {
+		HashMap<Integer, ArrayList<Integer>> answer = new HashMap<>();
 		ArrayList<Integer> temp;
 		int bufValue, bufKey;
 		
@@ -28,25 +22,14 @@ public class group {
 			bufKey = list.get(i).getKey();
 			bufValue = list.get(i).getValue();
 			
-			if(!saveDataMap.containsKey(bufKey)) {
+			if(!answer.containsKey(bufKey)) {
 				temp = new ArrayList<>();
 				temp.add(list.get(i).getValue());
-				saveDataMap.put(bufKey, temp);
+				answer.put(bufKey, temp);
 			}else{
-				saveDataMap.get(bufKey).add(bufValue);
+				answer.get(bufKey).add(bufValue);
 			}
 		}
+		return answer;
 	}
-	
-	// 이부분. 정렬?
-	/* 데이터 출력 함수 */
-	public void printData() {
-		Iterator<Integer> iterator = saveDataMap.keySet().iterator(); // 오름차순 정렬.
-		
-		while (iterator.hasNext()) { 
-			int key = (int)iterator.next(); // 키 얻기
-			System.out.println(key +",  "+ this.saveDataMap.get(key));
-		}
-	}
-	
 }
